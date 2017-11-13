@@ -1,0 +1,246 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.menu-container {
+  position: relative;
+}
+
+#menu {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 112px auto 0;
+  height: 225px;
+  width: 225px;
+  background-color: #fff;
+  border-radius: 100%;
+  border: 15px solid #202020;
+  text-align: center;
+  background-color: #D7C8C8;
+  box-shadow: inset 0 0 10px 5px #A2A2A2;
+}
+
+.simon-container {
+  margin: 30px auto;
+  height: 450px;
+  width: 450px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+/* menu item **************************/
+
+#menu h1 {
+  font-family: 'Squada One', 'Impact', 'Copperplate';
+  font-size: 70px;
+  margin: 25px 0 0 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  font-family: 'Rationale';
+  font-size: 13px;
+}
+
+#countNumber {
+  font-family: 'Rajdhani';
+  font-size: 37px;
+  color: #C32424;
+  text-shadow: 0 2px 2px #C32424;
+  position: absolute;
+  margin: 0;
+  top: 96px;
+  left: 19px;
+}
+
+#count {
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: #413E39;
+  box-shadow: inset 0 0 14px 5px #2E2B28
+}
+
+#startButton,
+#strictButton,
+#resetButton {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: 4px solid #46453A;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#startButton {
+  background-color: #F91212;
+  box-shadow: inset 0 0 2px 1px #A61313;
+}
+
+#strictButton,
+#resetButton {
+  background-color: #FFEF06;
+  box-shadow: inset 0 0 2px 1px #8E8210;
+}
+
+#startButton:hover,
+#strictButton:hover,
+#resetButton:hover {
+  cursor: pointer;
+}
+
+#startButton:active {
+  box-shadow: inset 0 0 2px 1px #F91212;
+  box-shadow: 0 0 2px 1px #F91212;
+}
+
+#strictButton:active,
+#resetButton:active {
+  box-shadow: inset 0 0 2px 1px #FFEF06;
+  box-shadow: 0 0 2px 1px #FFEF06;
+}
+
+.description-list {
+  text-align: left;
+  margin-top: -7px;
+}
+
+.countName {
+  margin-left: 25px;
+  margin-right: 11px;
+}
+
+.strictName,
+.startName {
+  padding-left: 3px;
+  margin-right: 2px;
+}
+
+.resetName {
+  padding-left: 5px;
+}
+
+#powerSwitch {
+  height: 25px;
+  width: 44px;
+  background-color: #1F1F1C;
+  border-radius: 3px;
+  padding: 0;
+}
+
+.on,
+.off {
+  font-size: 16px;
+}
+
+#powerButton {
+  height: 23px;
+  width: 20px;
+  box-shadow: inset 0 0 3px 1px #353AC6;
+  background-color: #464BD2;
+  border-radius: 3px;
+}
+
+#powerButton:hover {
+  cursor: pointer;
+}
+
+/* lighting ***************************/
+
+.light0,
+.light1,
+.light2,
+.light3 {
+  height: 225px;
+  width: 225px;
+  display: inline-block;
+}
+
+.light1,
+.light3 {
+  float: right;
+}
+
+.light0 {
+  border-top-left-radius: 100%;
+  border-top: 25px solid #202020;
+  border-right: 12.5px solid #202020;
+  border-bottom: 12.5px solid #202020;
+  border-left: 25px solid #202020;
+  margin-bottom: -4px;
+  background-color: #106E20;
+}
+
+.light1 {
+  border-top-right-radius: 100%;
+  border-top: 25px solid #202020;
+  border-right: 25px solid #202020;
+  border-bottom: 12.5px solid #202020;
+  border-left: 12.5px solid #202020;
+  margin-bottom: -4px;
+  background-color: #9A1313;
+}
+
+.light2 {
+  border-bottom-left-radius: 100%;
+  border-top: 12.5px solid #202020;
+  border-right: 12.5px solid #202020;
+  border-bottom: 25px solid #202020;
+  border-left: 25px solid #202020;
+  background-color: #B3BF0A;
+}
+
+.light3 {
+  border-bottom-right-radius: 100%;
+  border-top: 12.5px solid #202020;
+  border-right: 25px solid #202020;
+  border-bottom: 25px solid #202020;
+  border-left: 12.5px solid #202020;
+  background-color: #391197;
+}
+
+.light0:hover,
+.light1:hover,
+.light2:hover,
+.light3:hover {
+  cursor: pointer;
+}
+
+#greenLight {
+  background-color: #2BFF00;
+  box-shadow: inset 0 0 25px 15px #389226;
+  border-color: #212520;
+}
+
+#redLight {
+  background-color: #FF3232;
+  box-shadow: inset 0 0 25px 15px #C11E1E;
+  border-color: #212520;
+}
+
+#yellowLight {
+  background-color: #FFFF3F;
+  box-shadow: inset 0 0 25px 15px #CBCB19;
+  border-color: #212520;
+}
+
+#blueLight {
+  background-color: #414EFF;
+  box-shadow: inset 0 0 25px 15px #2E37B2;
+  border-color: #212520;
+}

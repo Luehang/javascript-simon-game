@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simon Game</title>
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600|Rationale|Squada+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="menu-container">
+      <div id="menu">
+        <h1>Simon</h1>
+        <ul class="button-list">
+          <li id="count">
+            <p id="countNumber"></p>
+          </li>
+          <li id="strictButton"></li>
+          <li id="startButton"></li>
+          <li id="resetButton"></li>
+        </ul>
+        <ul class="description-list">
+          <li class="countName">COUNT</li>
+          <li class="strictName">STRICT</li>
+          <li class="startName">START</li>
+          <li class="resetName">RESET</li>
+        </ul>
+        <ul class="power-list">
+          <li class="off">OFF</li>
+          <li id="powerSwitch">
+            <div id="powerButton">
+            </div>
+          </li>
+          <li class="on">ON</li>
+        </ul>
+      </div>
+    </div>
+    <div class="simon-container activated">
+      <div class="light0">
+        <audio id="audio0" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mp3" preload />
+      </div>
+      <div class="light1">
+        <audio id="audio1" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mp3" preload />
+      </div>
+      <div class="light2">
+        <audio id="audio2" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mp3" preload />
+      </div>
+      <div class="light3">
+        <audio id="audio3" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mp3" preload />
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
